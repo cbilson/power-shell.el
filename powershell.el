@@ -14,7 +14,7 @@
 ;;; Commentary:
 ;;
 ;; Run Windows PowerShell v1.0 or v2.0 as an inferior shell within
-;; emacs. Tested with emacs v22.2 and v23.2.
+;; Emacs.  Tested with Emacs v22.2 and v23.2.
 ;;
 ;; To use it, M-x powershell .
 ;;
@@ -82,7 +82,7 @@
 ;;
 
 
-
+;;; Code:
 (require 'shell)
 
 ;; TODO: set this programmatically, relying on %WINDIR%
