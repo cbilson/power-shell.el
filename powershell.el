@@ -175,7 +175,7 @@ emacs has resized its window. ")
              "  $rawui = (Get-Host).UI.RawUI\n"
              "  # retrieve the values\n"
              "  $bufsize = $rawui.BufferSize\n"
-             "  $winsize = $rawui.WindowSize\n"
+             "  $winsize = [Math]::Min($rawui.WindowSize, 120)\n"
              "  $cwidth = $winsize.Width\n"
              "  $winsize.Width = $pswidth \n"
              "  $bufsize.Width = $pswidth\n"
